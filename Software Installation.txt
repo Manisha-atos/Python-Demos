@@ -1,0 +1,7 @@
+Installation on Windows
+Visit the link https://www.python.org to download the latest release of Python. In this process, we will install Python 3.11.3 on our Windows operating system. When we click on the above link, it will bring us the following page.
+
+2. Install Python extension in Visual studio code
+
+3.Online editor
+https://www.online-python.com/ 

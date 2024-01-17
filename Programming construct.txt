@@ -1,0 +1,72 @@
+a = int (input("Enter a: "));    
+b = int (input("Enter b: "));    
+c = int (input("Enter c: "));    
+if a>b and a>c:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given a is largest");    
+if b>a and b>c:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given b is largest");    
+if c>a and c>b:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print ("From the above three numbers given c is largest"); 
+
+age = int (input("Enter your age: "))    
+# Here, we are taking an integer num and taking input dynamically  
+if age>=18:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("You are eligible to vote !!");    
+else:    
+    print("Sorry! you have to wait !!");    
+
+if number==10:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equals to 10")    
+elif number==50:  
+# Here, we are checking the condition. If the condition is true, we will enter the block    
+    print("The given number is equal to 50");    
+elif number==100:    
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equal to 100");    
+else:    
+    print("The given number is not equal to 10, 50 or 100");  
+
+numbers = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]  
+for value in numbers:  
+    square = value ** 2  
+    squares.append(square)  
+print("The list of squares is", squares)  
+
+tuple_ = (3, 4, 6, 8, 9, 2, 3, 8, 9, 7)  
+  
+# Initiating the loop  
+for value in tuple_:  
+    if value % 2 != 0:  
+        print(value)  
+# giving an else statement  
+else:  
+    print("These are the odd numbers present in the tuple")   
+
+tuple_ = ("Python", "Loops", "Sequence", "Condition", "Range")  
+  
+# iterating over tuple_ using range() function  
+for iterator in range(len(tuple_)):  
+    print(tuple_[iterator].upper()) 
+
+
+'''l1=[1,2,3,4]
+for x in range(len(l1)):
+    l1[x]=l1[x]*2
+    print(x+"="+l1[x]);
+print(l1)'''
+
+for i in range(1,4):
+    print("i=%d" %i)
+    for j in range(1,4):
+        print("j=%d"%j);
+
+counter = 0  
+# Initiating the loop  
+while counter < 10: # giving the condition  
+    counter = counter + 3  
+    print("Python Loops")       

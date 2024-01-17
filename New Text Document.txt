@@ -1,0 +1,588 @@
+Day 1:
+Editors 
+spider,pycharm,jupiter,VS, online compiler --basics
+core lang is python no more c
+Python is an interpreted scripting language also. Guido Van Rossum is known as the founder of Python programming.
+C:\Users\a717861\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12
+
+
+vaiable:
+========
+Python does not bind us to declare a variable before using it in the application. It allows us to create a variable at the required time.
+
+Variable names must begin with a letter or an underscore, but they can be a group of both letters and digits.
+
+The name of the variable should be written in lowercase. Both Rahul and rahul are distinct variables.
+Pause
+White space and special characters (!, @, #, %, etc.) are not allowed in the identifier name. ^, &, *).
+
+
+
+We don't need to declare explicitly variable in Python. When we assign any value to the variable, that variable is declared automatically.
+
+The equal (=) operator is used to assign value to a variable.
+Types of Variable
+local
+global:A variable declared outside the function is the global variable by default. Python provides the global keyword to use global variable inside the function. If we don't use the global keyword, the function treats it as a local variable. Let's understand the following example.
+
+Object Identity
+===============
+In Python, every created object identifies uniquely in Python.The built-in id() function, is used to identify the object identifier. Consider the following example.
+
+The multi-word keywords can be created by the following method.
+Camel Case ---helloWorld()
+Pascal Case ---HelloWorld()
+Snake Case ---hello_world()
+
+Comments
+========
+#-->single line
+In Python, we may use hashtags (#) multiple times to construct multiple lines of comments.
+'''--multiple line commanet
+Python Data Type
+================
+String 
+name="hello"
+multi line string 
+text1='hello\    
+user'   
+or
+
+str2='''welcome  
+to  
+SSSIT'''    
+print str2   
+print(text1)  
+
+int 
+a=100;
+
+Python has the following data types built-in by default, in these categories:
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+
+Complex Data Type
+-------------------
+List:[]
+======
+A list in Python is used to store the sequence of various types of data. A list can be defined as a collection of values or items of different types. 
+Python lists are mutable type which implies that we may modify its element after it has been formed. The items in the list are separated with the comma (,) and enclosed with the square brackets [].
+
+
+Characteristics of Lists
+The list has the following characteristics:
+
+The lists are ordered.
+The element of the list can access by index.
+The lists are the mutable type.
+The lists are mutable types.
+A list can store the number of various elements.
+
+a=[1,2,3,4]
+b=[1,"apple",3.3]
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+sublist
+--------
+ist_varible(start:stop:step)    
+
+Python provides the following built-in functions, which can be used with the lists.
+
+len()
+max()
+min()
+
+Tuple:
+-------
+Features of Python Tuple()
+Tuples are an immutable data type, meaning their elements cannot be changed after they are generated.
+Each element in a tuple has a specific order that will never change because tuples are ordered sequences.
+indexing is used to access the element
+
+A tuple's parts can't be modified, as was recently said. We are unable to eliminate or remove tuple components as a result.
+t1=(1,2,3)   
+print(t1*3)
+
+
+Count () Method
+Index() Method:
+List VS Tuple
+==============
+
+Size Difference
+Since tuples are immutable, Python allocates bigger chunks of memory with minimal overhead. Python, on the contrary, allots smaller memory chunks for lists. The tuple would therefore have less memory than the list. If we have a huge number of items, this makes tuples a little more memory-efficient than lists.
+Tuples have fewer built-in functions than lists. 
+An important difference between a list and a tuple is that lists are mutable, whereas tuples are immutable. What exactly does this imply? It means a list's items can be changed or modified, whereas a tuple's items cannot be changed or modified.
+
+Set:{}
+-----
+A Python set is the collection of the unordered items. Each element in the set must be unique, immutable, and the sets remove the duplicate elements. Sets are mutable which means we can modify it after its creation.
+
+add()
+t1.add(100)
+update()
+t1.update(1,3,4)
+
+Python provides the discard() method and remove() method which can be used to remove the items from the set. The difference between these function, using discard() function if the item does not exist in the set then the set remain unchanged whereas remove() method will through an error.
+
+
+
+Unlike other collections in Python, there is no index attached to the elements of the set, i.e., we cannot directly access any element of the set by the index. However, we can print them all together, or we can get the list of elements by looping through the set.
+The set can be created by enclosing the comma-separated immutable items with the curly braces {}. Python also provides the set() method, which can be used to create the set by the passed 
+sequence.
+
+Dictionary {key:value,key:value}:
+-----------
+The data is stored as key-value pairs using a Python dictionary.
+This data structure is mutable
+The components of dictionary were made using keys and values.
+Keys must only have one component.
+Values can be of any type, including integer, list, and tuple.
+Python provides the built-in function dict() method which is also used to create the dictionary.
+
+The empty curly braces {} is used to create empty dictionary.
+
+check for Numpi
+Functions in python
+built in function 
+print '' or ""
+type() --- print the class 
+id()--object identity
+===================
+#  An example Python Function  
+def function_name( parameters ):  
+    # code block  
+ <yuvaraj.karuppusamy@eviden.com>
+
+Function Arguments
+==================
+Default arguments
+Keyword arguments 
+Required arguments or positional arguments
+Variable-length arguments:
+We can involve unique characters in Python capabilities to pass many contentions. However, we need a capability. This can be accomplished with one of two types of characters:
+
+args" and "kwargs" refer to arguments not based on keywords.
+def keyword is used to define function
+#varray demo
+def sum(*args):
+  for x in args:
+     print(x);
+  
+print(sum("1","apple","1","20","3","4","5",100))
+
+#**kwargs
+ def display(**kwargs):
+    for key,value in kwargs.items():
+        print(key)
+        print(value);
+
+display(name="manisha",age=33,sal=12323.55,loc="Pune")
+       
+
+2 errors:
+1. indentation error
+2. positional argu error
+print ("hello")
+from python 3 () are started 
+print hello---ok till python 2
+
+Anonymous function:
+----------------------
+1. function dont have name
+2. created by using keyword lamda
+3. takes any no of aru and can return value
+
+'''def display(**kwargs):
+    for key,value in kwargs.items():
+        print(key)
+        print(value);
+
+display(name="manisha",age=33,sal=12323.55,loc="Pune")
+def add(a,b=10):
+    print(a+b);'''
+
+
+cube=lambda a:a*a*a
+print(cube(3))
+
+square=lambda a,b:a+b ;print ('ass')
+print(square(2,3))
+
+hello=lambda :print ('helloooo')
+hello()
+
+
+
+
+
+    
+
+Special Functions:
+=================
+Chr()  char to ASCII
+
+Ord()  ASCII to char
+input()
+()--type cating 
+enumerate()returns index number for member of collections.
+
+
+
+spider ,jupiter
+online editor--https://www.online-python.com/
+data types
+int ,float,string 
+dynamic scripting language
+complex data type--list,tuple ,dictonary
+#--single line comment
+'''  .... '''--multiple line 
+3 type para
+positional
+default
+keyword
+till 2.5 no paranthesis
+after 3 () is requied
+scope local and global
+Nameerror
+
+input()--to get value , default datatype is string
+type()--returns the type
+=============================================================
+Conditinal statements
+loops
+Sr.No.	Name of the loop	Loop Type & Description
+1	While loop	Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.
+2	For loop	This type of loop executes a code block multiple times and abbreviates the code that manages the loop variable.
+3	Nested loops	We can iterate a loop inside another loop.
+
+pass---new jump statement 
+
+Day 2:
+Python modules
+statistics modules:
+random modules:
+import random
+print(random.random())
+print(random.randint(5,6))
+print(random.randint(6,15))
+time modules:
+
+import time
+print(time.time())
+print(time.ctime())
+
+datetime modules:
+import datetime
+print(datetime.datetime.now())
+print(datetime.datetime(2022,3,9))
+
+math nodules:
+
+calendar modules:
+import calendar
+print(calendar.prcal(2023))
+print(calendar.isleap(2023))
+print(calendar.monthcalendar(2023,7))
+print(calendar.prmonth(2023,7))
+
+csv module:
+
+pip install pandas
+https://www.geeksforgeeks.org/reading-excel-file-using-python/
+https://www.geeksforgeeks.org/reading-excel-file-using-python/
+https://www.dataquest.io/blog/reading-excel-file-python/
+
+
+book = xlsxwriter.Book('input1.xlsx')     
+sheet = book.add_sheet()     
+       
+# Rows and columns are zero indexed.     
+row = 0    
+column = 0    
+      
+content = ["Parker", "Smith", "John"]     
+      
+# iterating through the content list     
+for item in content :     
+      
+    # write operation perform     
+    sheet.write(row, column, item)     
+      
+    # incrementing the value of row by one with each iterations.     
+    row += 1    
+          
+book.close()     
+
+sumit 7020349116  9823294446
+Day 4:Exception handling
+Error in Python can be of two types i.e. Syntax errors and Exceptions. Errors are problems in a program due to which the program will stop the execution. On the other hand, exceptions are raised when some internal events occur which change the normal flow of the program. 
+
+SyntaxError: This exception is raised when the interpreter encounters a syntax error in the code, such as a misspelled keyword, a missing colon, or an unbalanced parenthesis.
+
+TypeError: This exception is raised when an operation or function is applied to an object of the wrong type, such as adding a string to an integer.
+
+NameError: This exception is raised when a variable or function name is not found in the current scope.
+
+IndexError: This exception is raised when an index is out of range for a list, tuple, or other sequence types.
+
+KeyError: This exception is raised when a key is not found in a dictionary.
+ValueError: This exception is raised when a function or method is called with an invalid argument or input, such as trying to convert a string to an integer when the string does not represent a valid integer.
+AttributeError: This exception is raised when an attribute or method is not found on an object, such as trying to access a non-existent attribute of a class instance.
+IOError: This exception is raised when an I/O operation, such as reading or writing a file, fails due to an input/output error.
+ZeroDivisionError: This exception is raised when an attempt is made to divide a number by zero.
+ImportError: This exception is raised when an import statement fails to find or load a module.
+
+Syntax Error:
+=============
+string = "Python Exceptions"  
+  
+for s in string:  
+    if (s != o:  
+        print( s 
+
+Exceptions: 
+===========
+are raised when the program is syntactically correct, but the code results in an error. This error does not stop the execution of the program, however, it changes the normal flow of the program.
+
+l1=[1,2,3]
+    for x in range(len(l1)+1):
+        print(l1[x]);
+
+print(4/0)
+
+TypeError: This exception is raised when an operation or function is applied to an object of the wrong type. Here’s an example:
+x = 5
+y = "hello"
+z = x + y  
+
+
+x = 5
+y = "hello"
+try:
+    z = x + y
+except TypeError:
+    print("Error: cannot add an int and a str") 
+
+
+a = [1, 2, 3]
+try:
+    print ("Second element = %d" %(a[1]))
+ 
+    # Throws error since there are only 3 elements in array
+    print ("Fourth element = %d" %(a[3]))
+ 
+except:
+    print ("An error occurred")
+
+def fun(a):
+    if a < 4:
+ 
+        # throws ZeroDivisionError for a = 3
+        b = a/(a-3)
+ 
+    # throws NameError if a >= 4
+    print("Value of b = ", b)
+     
+try:
+    fun(3)
+    fun(5)
+ 
+# note that braces () are necessary here for
+# multiple exceptions
+except ZeroDivisionError:
+    print("ZeroDivisionError Occurred and Handled")
+except NameError:
+    print("NameError Occurred and Handled")
+
+or Python 2.6 and later and Python 3.x:
+
+except Exception as e: print(e)
+For Python 2.5 and earlier, use:
+
+except Exception,e: print str(e)
+
+Try with Else Clause
+In Python, you can also use the else clause on the try-except block which must be present after all the except clauses. The code enters the else block only if the try clause does not raise an exception.
+def AbyB(a , b):
+    try:
+        c = ((a+b) / (a-b))
+    except ZeroDivisionError:
+        print ("a/b result in 0")
+    else:
+        print (c)
+ 
+# Driver program to test above function
+AbyB(2.0, 3.0)
+AbyB(3.0, 3.0)
+
+Finally Keyword in Python
+Python provides a keyword finally, which is always executed after the try and except blocks. The final block always executes after the normal termination of the try block or after the try block terminates due to some exception.
+try:
+    k = 5//0  # raises divide by zero exception.
+    print(k)
+ 
+# handles zerodivision exception
+except ZeroDivisionError:
+    print("Can't divide by zero")
+ 
+finally:
+    # this block is always executed
+    # regardless of exception generation.
+    print('This is always executed')
+
+Multiple Exception Handling in Python
+
+try:
+    client_obj.get_url(url)
+except (URLError, ValueError, SocketTimeout):
+    client_obj.remove_url(url)
+
+Comprehension in python:
+In Python, comprehension is a concise and powerful syntax for creating new sequences (such as lists, sets, or dictionaries) based on existing sequences. 
+
+List Comprehension:
+Person = ["Piyali", "Hiya", "Rudrashish", "Badsha", "Lipi"]  
+newlist = [x for x in Person if "i" in x]  
+print(newlist)  
+
+numbers = [3, 5, 1, 7, 3, 9]  
+  
+num = [n**2 for n in numbers]  
+  
+print(num)  
+Set Comprehension:
+Dictionary Comprehension:
+
+
+Day 5:
+=======
+OOPS
+The self-parameter refers to the current instance of the class and accesses the class variables. We can use anything instead of self, but it must be the first parameter of any function which belongs to the class.
+
+_ _init_ _ method
+In order to make an instance of a class in Python, a specific function called __init__ is called. Although it is used to set the object's attributes, it is often referred to as a constructor.
+
+Inheritance
+class class1:  
+    <class-suite>   
+class class2(class1):  
+    <class suite>  
+class class3(class2):  
+    <class suite>  
+
+multiple inheritance:
+class Derived(Base1, Base2, ...... BaseN):  
+    <class-suite> 
+Method overloadding:
+https://www.geeksforgeeks.org/python-method-overloading/
+
+Method Overriding:
+
+
+Data hiding__
+lass Employee:
+    #unable to use def and para constructor
+    name='';
+    __age=0;
+
+    def __init__(self):
+        Employee.name='manisha kiran'
+        Employee.age=33;
+        print('def constructor');  
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print("hello");      
+    
+    '''def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print("hello");
+e1=Employee('manisha',33)
+e1.display()'''
+e2=Employee()
+e2.display()
+print(e2.__age)
+
+Abstract class:
+A class that consists of one or more abstract method is called the abstract class. Abstract methods do not contain their implementation. Abstract class can be inherited by the subclass and abstract method gets its definition in the subclass. Abstraction classes are meant to be the blueprint of the other class. An abstract class can be useful when we are designing large functions. An abstract class is also helpful to provide the standard interface for different implementations of components. Python provides the abc module to use the abstraction in the Python program. Let's see the following syntax.
+
+unlike the other high-level language, Python doesn't provide the abstract class itself. We need to import the abc module, which provides the base for defining Abstract Base classes (ABC). The ABC works by decorating methods of the base class as abstract. It registers concrete classes as the implementation of the abstract base. We use the @abstractmethod decorator to define an abstract method or if we don't provide the definition to the method, it automatically becomes the abstract method. Let's understand the following example.
+
+An Abstract class can contain the both method normal and abstract method.
+An Abstract cannot be instantiated; we cannot create objects for the abstract class.
+child class need to override all abstract methods of abstract class
+https://www.geeksforgeeks.org/abstract-classes-in-python/
+
+String  handling
+================
+lower(): Converts all uppercase characters in a string into lowercase
+upper(): Converts all lowercase characters in a string into uppercase
+title(): Convert string to title case
+swapcase(): Swap the cases of all characters in a string
+capitalize(): Convert the first character of a string to uppercase
+
+Function Name 	Description
+capitalize()	Converts the first character of the string to a capital (uppercase) letter
+casefold()	Implements caseless string matching
+center()	Pad the string with the specified character.
+count()	Returns the number of occurrences of a substring in the string.
+encode()	Encodes strings with the specified encoded scheme
+endswith()	Returns “True” if a string ends with the given suffix
+expandtabs()	Specifies the amount of space to be substituted with the “\t” symbol in the string
+find()		Returns the lowest index of the substring if it is found
+format()	Formats the string for printing it to console
+format_map()	Formats specified values in a string using a dictionary
+index()	Returns the position of the first occurrence of a substring in a string
+isalnum()	Checks whether all the characters in a given string is alphanumeric or not
+isalpha()	Returns “True” if all characters in the string are alphabets
+isdecimal()	Returns true if all characters in a string are decimal
+isdigit()	Returns “True” if all characters in the string are digits
+isidentifier()	Check whether a string is a valid identifier or not
+islower()	Checks if all characters in the string are lowercase
+isnumeric()	Returns “True” if all characters in the string are numeric characters
+isprintable()	Returns “True” if all characters in the string are printable or the string is empty
+isspace()	Returns “True” if all characters in the string are whitespace characters
+istitle()	Returns “True” if the string is a title cased string
+isupper()	Checks if all characters in the string are uppercase
+join()	Returns a concatenated String
+ljust()	Left aligns the string according to the width specified
+lower()	Converts all uppercase characters in a string into lowercase
+lstrip()	Returns the string with leading characters removed
+maketrans()	 Returns a translation table
+partition()	Splits the string at the first occurrence of the separator 
+replace()	Replaces all occurrences of a substring with another substring
+rfind()	Returns the highest index of the substring
+rindex()	Returns the highest index of the substring inside the string
+rjust()	Right aligns the string according to the width specified
+rpartition()	Split the given string into three parts
+rsplit()	Split the string from the right by the specified separator
+rstrip()	Removes trailing characters
+splitlines()	Split the lines at line boundaries
+startswith()	Returns “True” if a string starts with the given prefix
+strip()	Returns the string with both leading and trailing characters
+swapcase()	Converts all uppercase characters to lowercase and vice versa
+title()	Convert string to title case
+translate()	Modify string according to given translation mappings
+upper()	Converts all lowercase characters in a string into uppercase
+zfill()	Returns a copy of the string with ‘0’ characters padded to the left side of the string
+
+https://www.geeksforgeeks.org/python-string-methods/
+https://www.bing.com/search?pglt=41&q=string+comparison+in+python&cvid=1271a34e559b41b19c7a9720a175ddb3&aqs=edge.0.0l9j69i11004.9806j0j1&FORM=ANNAB1&PC=U531
+
+
+
+
